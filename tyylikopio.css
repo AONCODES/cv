@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden;
   /* Ei rullaa pöytäkoneella ja tabletilla */
 }
 
@@ -202,6 +202,14 @@ nav a:hover {
 
 }
 
+html,
+body {
+  overflow: auto;
+  /* Kaikki sivut rullattavissa */
+  height: auto;
+  /* Varmistaa, että sisältö ei rajoitu */
+}
+
 
 @media (max-width: 768px) {
 
@@ -264,21 +272,5 @@ nav a:hover {
     display: none;
   }
 
-  @media (max-height: 500px) and (orientation: landscape) {
 
-    html,
-    body {
-      overflow: auto;
-      /* Landscape-moodissa voi rullata */
-    }
-
-    .cv-sections {
-      flex-direction: column;
-      padding: 10px;
-    }
-
-    .cv-section {
-      padding: 15px;
-    }
-  }
 }
