@@ -208,7 +208,6 @@ nav a:hover {
   html,
   body {
     overflow: auto;
-
     height: auto;
 
   }
@@ -263,5 +262,23 @@ nav a:hover {
 
   .kuva {
     display: none;
+  }
+
+  @media (max-height: 500px) and (orientation: landscape) {
+
+    html,
+    body {
+      overflow: auto;
+      /* Landscape-moodissa voi rullata */
+    }
+
+    .cv-sections {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .cv-section {
+      padding: 15px;
+    }
   }
 }
