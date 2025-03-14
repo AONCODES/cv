@@ -10,19 +10,21 @@ html {
   font-family: "Roboto Mono";
 }
 
-/* Estetään rullaaminen Aatunkopio-sivulla (paitsi mobiilissa) */
+
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  /* overflow: hidden;
+  height: auto;
+  overflow: auto;
+  /* overflow: hidden;*/
+
   /* Ei rullaa pöytäkoneella ja tabletilla */
 }
 
 .CVsivu {
   height: 100vh;
-  overflow: auto;
+  /*overflow: auto;*/
   /* Varmistaa, että voi rullata */
 }
 
@@ -202,13 +204,6 @@ nav a:hover {
 
 }
 
-html,
-body {
-  overflow: auto;
-  /* Kaikki sivut rullattavissa */
-  height: auto;
-  /* Varmistaa, että sisältö ei rajoitu */
-}
 
 
 @media (max-width: 768px) {
